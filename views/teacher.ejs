@@ -1,0 +1,80 @@
+<html>
+<head>
+		<%- include('./includes/links'); %>
+	<link rel="stylesheet" type="text/css" href="/public/css/csteacher.css">
+	<title>Faculties</title>
+</head>
+<body>
+		<%- include('./includes/navbar'); %>
+<div class="container">
+	<div class="card-columns">
+		 <div class="card">
+			<div class="card-body bg-info">
+				<img src="/public/images/teachers/sipra.jpg" class="card-image">
+				<br>
+				<h3 class="card-header">Prof. Nitesh kumar</h3>
+				<br>
+				<p class="card-text">Data Mining</p>
+				<a href="login"> <button class = "btn btn-sm btn-light">Take Attendance</button></a>
+				 <a href="/attendance/nitesh"><button class = "btn btn-sm btn-dark">See Attendance</button></a>
+
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-body bg-danger">
+				<img src="/public/images/teachers/neha.jpg" class="card-image">
+				<h3 class="card-header">Prof. Neha Kiran</h3> <br>
+				<p class="card-text">Mentor(8th sem)</p>
+				<a href="login"> <button class = "btn btn-sm btn-light">Take Attendance</button></a>
+				 <a href="/attendance/neha"><button class = "btn btn-sm btn-dark">See Attendance</button></a>
+
+			</div>
+		</div>
+		 <div class="card">
+			<div class="card-body bg-warning">
+				<img src="/public/images/teachers/mishra.png" class="card-image">
+				<h3 class="card-header">Prof. Deepak yadav</h3><br>
+				<p class="card-text">H.O.D</p>  
+				<a href="login"> <button class = "btn btn-sm btn-light">Take Attendance</button></a>
+				 <a href="/attendance/deepak_yadav"><button class = "btn btn-sm btn-dark">See Attendance</button></a>
+
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-body bg-primary">
+				<img src="/public/images/teachers/monesh.jpg" class="card-image">
+				<h3 class="card-header">Prof. Monesh Kumar</h3><br>
+				<p class="card-text">R.T.S</p>
+				<a href="login"> <button class = "btn btn-sm btn-light">Take Attendance</button></a>
+				 <a href="/attendance/monesh"><button class = "btn btn-sm btn-dark">See Attendance</button></a>
+
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-body bg-success">
+				<img src="/public/images/teachers/deepak.jpg" class="card-image">
+				<h3 class="card-header">Prof. Deepak Kumar</h3><br>
+				<p class="card-text">F.D.C</p>
+				<a href="login"> <button class = "btn btn-sm btn-light">Take Attendance</button></a>
+				 <a href="/attendance/deepak_kr"><button class = "btn btn-sm btn-dark">See Attendance</button></a>
+
+
+			</div>
+		</div>
+		<div class="card">
+			<div class="card-body "style="background-color:tomato">
+				<img src="/public/images/teachers/deepak.jpg" class="card-image">
+				<h3 class="card-header">Prof. Rinku </h3><br>
+				<p class="card-text">P.M.I.R</p>				
+				<a href="login"> <button class = "btn btn-sm btn-light">Take Attendance</button></a>
+				 <a href="/attendance/rinku"><button class = "btn btn-sm btn-dark">See Attendance</button></a>
+
+			</div>
+		</div>
+	</div>
+</div>
+	<div class=" container-fluid">
+            <%- include('./includes/footer'); %>
+	</div>
+</body>
+</html>

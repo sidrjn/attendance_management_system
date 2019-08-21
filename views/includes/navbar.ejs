@@ -1,0 +1,28 @@
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+    });
+    </script>
+    
+        <nav class="navbar navbar-expand bg-dark navbar-dark sticky-top">
+              <button class="navbar-toggler" id="burger" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+             </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <a class="nav-link" href="/"><i class="fa fa-home"></i>Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="branch" data-toggle="tooltip" data-trigger="hover" title="Branches ; Faculties" data-placement="bottom" style="word-spacing: 0px"><i class="fa fa-book"></i>Branches</a>
+                      </li>   
+                      <li class="nav-item">
+                        <a class="nav-link" href="contacts"><i class="fa fa-volume-control-phone"></i>Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about"><i class="fa fa-user-secret"></i>About Us</a>
+                      </li>
+                </ul>
+              </div>
+              <span class="badges-sm"><img src="/public/images/homepage/logo.png" id="logo"></span>
+        </nav>

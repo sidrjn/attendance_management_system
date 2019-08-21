@@ -1,0 +1,284 @@
+*{
+	padding: 0px;
+	margin:0px;
+
+}
+.container{
+	text-align: center;
+}
+#picpsgc{
+	filter: brightness(100%);
+	width:100%;
+	height: 250px;
+}
+#picpsgc:hover{
+	filter: brightness(100%);
+}
+#logo{
+	width: 60px;
+	height: 60px;
+	margin-left: -100px;
+}
+#quote
+{
+	font-size:50px;
+}
+.quote
+{
+	background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('/public/images/homepage/quote.jpg');
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height:50vh; 
+    background-repeat: no-repeat;
+
+}
+
+blockquote{
+	padding-top: 50px;
+	font-family: qwigley;
+}
+iframe{
+	height:500px;
+	width: 100%;
+	box-shadow: 8px 8px 80px 0px gray;
+}
+nav{
+	height: 70px;
+	font-size: 10px;
+	text-align: center;
+	margin-top: 5px;
+	box-shadow: 0px 8px 5px 0px black;
+}
+#titlebar{
+	font-size:45px;
+	box-shadow: 0px 8px 10px 0px gray;
+	margin-bottom: 5px;
+	font-family:'Yesteryear';
+	text-shadow: 0px 2px 5px black;
+	padding-top: 17px;
+	color:#fff;
+	word-spacing: 10px;
+padding-left: 15px;
+}
+li a{
+	text-shadow: 2px 2px 3px black;
+	margin-left: 25px;
+	filter: brightness(200%);
+	font-size: 22px;
+}
+#burger{
+	color: black;
+}
+#galary{
+	
+	height: 400px;
+	width:1180px;
+}
+#img img{
+	height: 100px ;
+	width: 100px;
+}
+
+.card-header{
+	color: rgba(0,0,0,0.5);
+	font-weight: bold;
+	padding: 0;
+}
+.card-deck{
+margin: 100px;
+
+}
+.card-body{
+	height: 390px;
+	width: 280px;
+}
+.card-deck .card{
+	border: none;
+}
+.card-deck .card .card-body a{
+	color: white;
+	
+}
+.social{
+	word-spacing: 10px;
+}
+.card-deck .card .card-body{
+	box-shadow: -30px 30px 70px 0px gray;
+
+}
+.card-deck .card .card-body .card-image{
+	border-radius: 50%;
+}
+.card-deck .card .card-body:hover{
+	transform: rotate(3deg);
+}
+.card-deck .card .card-header{
+	font-size: 25px;
+	box-shadow: 4px 2px 70px 0px black;
+	font-family:euphoria script;
+	font-weight: bolder;	
+}
+.card-deck .card .card-text{
+	font-family: la belle aurore;
+}
+.card-deck .card .card-header:hover{
+	transform: rotate(-3deg);
+}
+.carousel-item img{
+	height: 400px;
+	width: 1200px;
+}
+#notice_box ul{
+	list-style-type: none;
+}
+#notice_box
+{
+	font-size: 18px;
+	height:300px;
+	width:100%;
+	text-align: center;
+	line-height:35px;
+}
+#notice_box ul li:nth-child(odd){
+	color: #fd5f00;
+animation-name: oddfloat;
+animation-duration: 3s;
+animation-timing-function:linear;
+animation-iteration-count:1;
+}
+#notice_box ul li:nth-child(even){
+	color: #207dff;	
+	animation-name: evenfloat;
+	animation-duration: 3s;
+	animation-timing-function:linear;
+	animation-iteration-count:1;
+	
+	}
+@keyframes oddfloat{
+	0%{
+		margin-left: 300px;
+		color:black;
+		opacity: 0.5;
+	}
+	100%{
+		margin-left: 0px;
+		color: #fd5f00;
+	opacity: 1;
+	}
+}
+
+@keyframes evenfloat{
+	0%{
+		margin-left: -300px;
+		color: black;	
+		opacity: 0.5;	
+	}
+	100%{
+		margin-left: 0px;
+		color: #207dff;	
+		opacity: 1;	
+	}
+}
+
+
+
+
+@media screen and (max-width:320px)
+{
+	#titlebar
+	{
+		height:50px;
+	}
+	#picpsgc{
+		height: 30vh;
+	}
+	.quote
+{
+	background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('/public/images/homepage/quote.jpg');
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height:30vh; 
+    background-repeat: no-repeat;
+	padding: 5px;
+}
+#burger{
+	font-size: 15px;
+}
+#logo{
+	width: 30px;
+	height: 30px;
+	margin-left: -100px;
+}
+	#quote{
+	font-size:20px;
+	}
+	blockquote{
+		padding-top: 2px;
+		font-family: qwigley;
+	}
+	.notice h1{
+		font-size: 17px;
+	}
+	.galary{
+		font-size: 17px;
+	}
+	iframe{
+		height:300px;
+		width: 100%;
+		box-shadow: 8px 8px 80px 0px gray;
+	}
+	.carousel-item{
+		height: 30vh;
+		width: 100%;
+	}
+	
+	.card-deck{
+		margin: 0px;
+		
+		}
+		.card-deck .card .card-header{
+			font-size: 15px;
+			box-shadow: 4px 2px 70px 0px black;
+			font-family:euphoria script;
+			font-weight: bolder;	
+		}
+		.card-deck .card{
+			box-shadow: -30px 30px 50px 0px gray;
+			
+		}
+		.card-body{
+			height: 60vh;
+		}
+		.card-text{
+			line-height:15px;
+		}
+		#img img{
+			height: 60px ;
+			width: 60px;
+		}
+		#titlebar{
+			font-size:20px;
+			box-shadow: 0px 8px 10px 0px gray;
+			margin-bottom: 5px;
+			font-family:'Yesteryear';
+			text-shadow: 0px 2px 5px black;
+			padding-top: 17px;
+			color:#fff;
+		padding-left: 15px;
+		}
+		#notice_box{
+			font-size: 10px;
+	height:150px;
+	width:100%;
+	text-align: center;
+	line-height: 10px;
+		}
+		#notice_box ul li:nth-child(odd){
+			animation: none;
+		}
+		#notice_box ul li:nth-child(even){
+			animation: none;
+		}
+}

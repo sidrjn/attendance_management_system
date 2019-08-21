@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./includes/links'); %>
+    <link rel="stylesheet" href="/public/css/attendance.css">
+    <title>Document</title>
+</head>
+<body>
+        <%- include('./includes/navbar'); %>
+        <div class="container-fluid">
+            <button class="name btn btn-dark justify-text-right">hello Prof.
+            <input type="text" name="teachers" class="teacher  bg-dark text-white" value=<%= n%>>
+            </button>
+            <form action="/attendance" method="POST">
+                    <%# <select name="teachers" id="teacher">
+                            <option value="Neha kiran">Prof. Neha</option>
+                            <option value="Deepak kr.Yadav">Prof. Deepak</option>
+                            <option value="Nitesh kr">Prof. Nitesh</option>
+                            <option value="Monesh kr.">Prof. Monesh</option>
+                        </select> %>
+            
+            <table class="table table-responsive">
+                
+                <tr>
+                    <th>s.no</th>
+                    <th>Name</th>
+                    <th>Roll</th>
+                    <th>status</th>
+                </tr>
+                <% for(var i=0;i<student.length;i++) {%>
+                <tr>
+                    <td><%= i+1 %></td>
+                    <td><%= student[i].name %>
+                    <input type="hidden" name="name" value="<%= student[i].name %>">
+                    </td>
+                    <td><%=student[i].roll_no%>
+                    <input type="hidden" name="roll" value="<%= student[i].roll_no %>">
+
+                    </td>
+                    <td>
+                    <select name="status" id="asd">
+                        <option value="Absent">Absent</option>
+                        <option value="Present">Present</option>
+                    </select>
+                    </td>
+                </tr>
+            
+                <%}%>
+            </table>
+            <button class="btn btn-primary" type="submit" >submit</button>    
+        </form>
+        <a href = "/logout"><button class="btn btn-primary">Logout</button></a>
+        </div>
+        
+
+
+    <!--<%- include('./includes/footer'); %>-->
+
+</body>
+</html>

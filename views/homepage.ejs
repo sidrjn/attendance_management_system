@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<%- include('./includes/links'); %>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="/public/css/homepage.css">
+	<script src="/public/js/homepage.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+	<!--college name-->
+	<div class="row">
+	<div class="col-12 px-0">
+	<h1 class="bg-primary" id="titlebar">Patna Sahib Technical Campus</h1>
+	</div></div>
+	<div class="row">
+
+	<!--college photo-->
+	<div class="col-12 px-0">
+	<img src="/public/images/homepage/about.jpg" id="picpsgc">
+	</div>
+	</div>
+
+		<!--Nav Bar-->
+	<div class="row sticky-top">
+	<div class="col-12 px-0">
+			<%- include('./includes/navbar'); %>
+		</div>
+	</div>
+	<br><br><br><br>
+	<!--Quotation-->
+	<div class="row">
+		<div class="col-12 px-0">
+			<div class=" justify-content-center quote">
+				<div class="">
+					<blockquote class="text-white" id="quote" style="text-align:center"></blockquote>
+				</div>
+			</div>
+		</div>
+	</div><br>
+
+		<!--Notice Board-->
+	<div>
+		<h3 class="display-4 notice text-center">Notice</h3><br>
+		<div id="notice_box">
+			<ul>
+				<li>College is going to give bullet proof jacket to every students.</li>
+				<li>College is going to give bullet proof jacket to every students.</li>
+				<li>College is going to give bullet proof jacket to every students.</li>
+				<li>College is going to give bullet proof jacket to every students.</li>
+				<li>College is going to give bullet proof jacket to every students.</li>
+			</ul>
+		</div>
+	</div>
+	<br><br><br>
+	<!--image slider-->
+	<div class="container justify-content-center slider">
+			<h3 class="display-4 galary">Galary</h3><br>
+			<div class="carousel slide" data-ride="carousel" id="gal">
+				<ul class="carousel-indicators">
+					<li data-target="#gal" data-slide-to="0" class="active"></li>
+					<li data-target="#gal" data-slide-to="1"></li>
+					<li data-target="#gal" data-slide-to="2"></li>
+					<li data-target="#gal" data-slide-to="3"></li>
+					<li data-target="#gal" data-slide-to="4"></li>
+		
+				</ul>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="/public/images/homepage/sexy.jpg">
+					</div>
+					<div class="carousel-item">
+						<img src="/public/images/homepage/lis.jpg">
+					</div>
+					<div class="carousel-item">
+						<img src="/public/images/homepage/wolf.jpg">
+					</div>
+					<div class="carousel-item">
+						<img src="/public/images/homepage/women_humor.jpg">
+					</div>
+					<div class="carousel-item">
+						<img src="/public/images/homepage/bike_chase.jpg">
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#gal" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				  </a>
+				  <a class="carousel-control-next" href="#gal" data-slide="next">
+					  <span class="carousel-control-next-icon"></span>
+				  </a>
+			</div>
+	</div>	
+	<br><br>
+
+	<!--creator's pannel-->
+	<div class="container mx-auto creators">
+			<div class="card-deck" id="img"  style="text-align: center">
+				<div class="card cc">
+					<div class="card-body bg-primary">
+						<img src="/public/images/homepage/himu.jpg" class="card-image img-sm">
+						<div class="card-header">Himanshu Kumar</div><br>
+						<div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat reprehenderit veniam, ab tempore reiciendis. Quo odit sint adipisci omnis possimus quaerat sunt nemo, totam explicabo dolores deleniti distinctio placeat!</div>
+						<div class="social">
+								<a href="#" class="fa fa-facebook"></a>
+								<a href="#" class="fa fa-twitter"></a>
+								<a href="#" class="fa fa-instagram"></a>
+								<a href="#" class="fa fa-google"></a>
+							</div>
+					</div>
+				</div>
+				<div class="card cc">
+					<div class="card-body bg-warning">
+						<img src="/public/images/homepage/me.jpg" class="card-image">
+						<div class="card-header">Sudhanshu Ranjan</div><br>
+						<div class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quaerat reprehenderit veniam, ab tempore reiciendis. Quo odit sint adipisci omnis possimus quaerat sunt nemo, totam explicabo dolores deleniti distinctio placeat!</div>
+						<div class="social">
+								<a href="#" class="fa fa-facebook"></a>
+								<a href="#" class="fa fa-twitter"></a>
+								<a href="#" class="fa fa-instagram"></a>
+								<a href="#" class="fa fa-google"></a>
+							</div>
+					</div>
+				</div>
+			</div>
+	</div>
+<!--footer-->
+<%- include('./includes/footer'); %>
+</div>
+
+
+</body>
+</html>

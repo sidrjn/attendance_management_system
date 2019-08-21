@@ -1,0 +1,65 @@
+
+body{
+	background-image: url('/public/images/teachers/bg1.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.container{
+	margin-top: 20px;
+}
+.card{
+	box-shadow: 2px 2px 8px 0px black;
+}
+.card-header{
+	color:white;
+	box-shadow: 2px 2px 50px 0px black;
+	font-size: 20px;
+}
+.card-header:hover{
+	transform: rotate(3deg);
+}
+img{
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	text-align: center;
+}
+.card-body{
+	height:260px;
+	text-align: center;
+	width:auto;
+}
+
+p{
+	color: rgba(0,0,0,0.5);
+	font-weight: bold;
+	font-size: 20px;
+	font-family: monospace;
+}
+.card-columns a:hover{
+	text-decoration: none;
+}
+.social a{
+	font-size: 20px;
+	color: white;
+	letter-spacing:20px;
+}
+.social a:hover{
+	color: skyblue;
+}
+
+
+@media screen and (max-width:320px){
+	.card-header{
+		color:white;
+		box-shadow: 2px 2px 50px 0px black;
+		font-size: 15px;
+	}
+
+	p{
+		color: rgba(0,0,0,0.5);
+		font-weight: bold;
+		font-size: 13px;
+		font-family: monospace;
+	}
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>log in</title>
+	<%- include('./includes/links'); %>
+	<link rel="stylesheet" type="text/css" href="/public/css/login.css">
+	</head>
+<body>
+		<%- include('./includes/navbar'); %>
+
+	<div class="container">
+		<div class="kuchhv">
+			<form method="POST" action="" name="form">
+				<div class="form-group"><br>
+					<label>E-mail:</label><br>
+					<input type="text" name="userid" class="form-control"
+					placeholder="abc@example.com"><br><br>
+					<label>Password:</label><br>
+					<input type="Password" name="password" placeholder="*********" class="form-control">
+					<br>
+					<button  class="btn btn-primary" type="submit">Submit</button>
+				</div>
+			</form>
+			</div>
+	</div><br>
+	<div class=" container-fluid">
+            <%- include('./includes/footer'); %>
+            </div>
+</body>
+</html>

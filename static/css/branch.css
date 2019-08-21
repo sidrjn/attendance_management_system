@@ -1,0 +1,70 @@
+body{
+	background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/public/images/branch/bbk.jpg');
+}
+.card-body{
+	height: 300px;
+	width: auto;
+	text-align: center;
+	border-top-right-radius:50%;
+	border-top-left-radius: 50%;
+}
+.card-body:hover{
+	transform: rotate(3deg);
+cursor: pointer;
+
+}
+
+p{
+	color:rgba(0,0,0,0.8);
+	font-weight: bold;
+}
+cite{
+	font-weight: bolder;
+	color: black;
+}
+img{
+	height:100px;
+	width:100px;
+	border-radius: 50%;
+	box-shadow:0px 4px 8px 0px rgba(0,0,0,0.2),0px 6px 20px 0 rgba(0,0,0,0.19); 
+}
+.card{
+	margin-top:40px;
+	box-shadow:0px 4px 8px 0px rgba(0,0,0,0.2),0px 6px 20px 0 rgba(0,0,0,0.19);
+border-top-right-radius:50%;
+border-top-left-radius: 50%;
+}
+.card-header{
+	box-shadow:0px 4px 8px 0px rgba(0,0,0,0.2),0px 6px 20px 0 rgba(0,0,0,0.19);
+	border-radius:5%;
+	font-family: monospace;
+
+}
+a:hover{
+	text-decoration:none;
+}
+@media screen and (max-width:320px){
+	.card-header{
+		box-shadow:0px 4px 8px 0px rgba(0,0,0,0.2),0px 6px 20px 0 rgba(0,0,0,0.19);
+		border-radius:5%;
+		font-family: monospace;
+		font-size: 6px;
+		font-weight: bolder;
+	}
+	p{
+		color:rgba(0,0,0,0.7);
+		
+	}
+
+	img{
+		height:70px;
+		width:70px;
+		border-radius: 50%;
+		box-shadow:0px 4px 8px 0px rgba(0,0,0,0.2),0px 6px 20px 0 rgba(0,0,0,0.19); 
+	}
+	
+	cite{
+		color: black;
+		font-size:10px;
+	}
+}

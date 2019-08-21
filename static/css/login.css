@@ -1,0 +1,45 @@
+.kuchhv{
+	background-image: url('/public/images/login/-Mouse1.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 450px;
+	color: white;
+	width: 400px;
+	margin-top: 75px;
+	font-family: sans-serif;
+	font-size: 25px;
+	box-shadow: 2px 4px 8px black;
+}
+form{
+	text-align: left;
+	width: 300px;
+	margin-left: 40px;
+}
+
+body{
+	background-image: url('/public/images/login/-Mouse.jpg');
+	background-size: cover;
+	background-position: center;
+
+}
+@media screen and (max-width:320px)
+{
+	.kuchhv{
+		background-image: url('/public/images/login/-Mouse1.jpg');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 300px;
+		color: white;
+		width: 265px;
+		margin-top: 20px;
+		font-family: sans-serif;
+		font-size: 15px;
+	}
+	form{
+		text-align: left;
+		width: 190px;
+		margin-left: 40px;
+
+}}

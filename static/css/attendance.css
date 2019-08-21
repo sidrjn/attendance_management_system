@@ -1,0 +1,14 @@
+.name{
+    float: right;
+    font-family: 'Sofia';
+    font-weight: bolder;
+}
+.container-fluid{
+    margin-top: 15px;
+}
+
+.teacher{
+    width: 120px;
+    border:none;
+    font-size: 17px;
+}

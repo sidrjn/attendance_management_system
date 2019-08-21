@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <%- include('./includes/links'); %>
+        <title>Prof. Neha</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <%- include('./includes/navbar'); %>
+    <div class='jumbotron'>
+        <h3>Hello Prof. Neha</h3>
+     <button class='btn btn-primary'>See Attendance</button>  <br> <br> 
+     <button class='btn btn-primary'>Take Attendance</button>  
+    </div>
+    <table class="table table-stripped">
+    <tr>
+            <th>Name</th>
+            <th>roll</th>
+            <th>status</th>
+            <th>date</th>
+    </tr>
+      <% for(var i=0; i<articles.length; i++) {%>
+      <%if (articles[i].teacher=='Neha kiran') { %>
+
+        
+
+   <tr>
+     <td>
+       <%= articles[i].name%>
+     </td>
+     <td>
+       <%= articles[i].roll%>
+     </td>
+     <td>
+       <%= articles[i].status%>
+     </td>
+     <td>
+       <%= articles[i].date%>
+     </td>
+   </tr>
+   <% } %>
+<% } %>
+</table>
+
+      
+</html>
